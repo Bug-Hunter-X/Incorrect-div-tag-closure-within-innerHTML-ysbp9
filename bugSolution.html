@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+  <script>
+    // Correctly appending new content without prematurely closing the parent div
+    document.getElementById("myDiv").innerHTML = "<div>This text replaces the original content.</div>";
+  </script>
+</body>
+</html>
